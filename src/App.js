@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Legend from './components/legend';
+import Button from './components/button'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Legend description='Texto Principal' color='green'/>
+      <Legend color='#034fff'/>
+      <Legend textTransform='uppercase'/>
+
+      <Button label='Baixar CV'/>
+      <Button label='Fazer download'/>
+
     </div>
-  );
+  );  
 }
 
 export default App;
+
