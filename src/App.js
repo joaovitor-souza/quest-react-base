@@ -1,15 +1,15 @@
-import Legend from './components/legend';
-import Button from './components/button'
+import StyleText from './components/StyledText/index.js';
+import AlertButton from './components/AlertButton/index.js'
 
 function App() {
   return (
     <div>
-      <Legend description='Texto Principal' color='green'/>
-      <Legend color='#034fff'/>
-      <Legend textTransform='uppercase'/>
+      <StyleText description='Texto Principal' color='green'/>
+      <StyleText color='#034fff'/>
+      <StyleText textTransform='uppercase'/>
 
-      <Button label='Baixar CV'/>
-      <Button label='Fazer download'/>
+      <AlertButton label='Baixar CV'/>
+      <AlertButton label='Fazer download'/>
 
     </div>
   );  
