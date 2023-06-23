@@ -1,16 +1,17 @@
 import React from 'react'
+import './index.css'
 
-const StyledText = ({description, color, textTransform}) => {
+const Legend = ({description, color, textTransform}) => {
     return (
-        <div style={{backgroundColor: color}}> 
+        <div className='style-text' style={{backgroundColor: color}}> 
             <p style={{textTransform: textTransform}}>{description}</p>
         </div>
     )
 }
 
-StyledText.defaultProps = {
+Legend.defaultProps = {
     color: 'red',
     description: 'Texto padrão'
 }
 
-export default StyledText
+export default Legend

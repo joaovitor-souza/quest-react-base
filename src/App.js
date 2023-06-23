@@ -1,12 +1,12 @@
-import StyleText from './components/StyledText/index.js';
+import StyledText from './components/StyledText/index.js';
 import AlertButton from './components/AlertButton/index.js'
 
 function App() {
   return (
     <div>
-      <StyleText description='Texto Principal' color='green'/>
-      <StyleText color='#034fff'/>
-      <StyleText textTransform='uppercase'/>
+      <StyledText description='Texto Principal' color='green'/>
+      <StyledText color='#034fff'/>
+      <StyledText textTransform='uppercase'/>
 
       <AlertButton label='Baixar CV'/>
       <AlertButton label='Fazer download'/>
